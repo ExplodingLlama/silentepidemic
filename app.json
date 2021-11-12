@@ -5,7 +5,19 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "androidNavigationBar": {
+     "barStyle": "dark-content",
+     "backgroundColor": "#0f2122"
+   },
+    "android": {
+      "package": "com.ratan.SilentEpidemic"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#0f2122"
+      
+    }
   },
-  "name": "SilentEpidemic"
+  "name": "A Silent Epidemic"
 }
