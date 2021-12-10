@@ -25,9 +25,15 @@ export default function App() {
     switch(id) {
       case 'intro': 
         uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Fintroduction.mp3?alt=media&token=05ed19e7-cf8c-434a-b502-24c2ca9fdb44';
-      break;
+        break;
       case 'facts': 
         uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Ffacts.mp3?alt=media&token=31b606bb-f75f-482b-ab10-402fa69e0a77';
+        break;
+      case 'appearance':
+        uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Fappearance.mp3?alt=media&token=ba8f7d0b-7e26-4fcb-8027-98ca1ab90679';
+        break;
+      case 'ecology':
+        uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Fecology.mp3?alt=media&token=fa919c93-9ad5-47a6-be9c-02069f4daf07';
         break;
       case 'origins':
         uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Forigins.mp3?alt=media&token=8521f6e4-d8f6-40e2-b64a-448683870525';
@@ -49,6 +55,18 @@ export default function App() {
         break;
       case 'air':
         uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Fair.mp3?alt=media&token=eec4cffb-9f97-4072-8a2e-bd13504ad5a9';
+        break;
+      case 'ml':
+        uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Fml.mp3?alt=media&token=689f4eff-d691-46e5-a722-afdfddbca2c3'
+        break;
+      case 'ndvi':
+        uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Fndvi.mp3?alt=media&token=68bf5b5f-7d83-4c12-8084-2bafa56df712'
+        break;
+      case 'curve':
+        uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Fcurve.mp3?alt=media&token=766b0d3e-e901-4880-ab78-561f3374c3ea';
+        break;
+      case 'results':
+        uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Fresults.mp3?alt=media&token=e0f88775-6f8f-42e8-a660-a3458a4cd3b0';
         break;
       default:
         uri = 'https://firebasestorage.googleapis.com/v0/b/dailies-f17d7.appspot.com/o/SilentEpidemic%2Ferror.mp3?alt=media&token=b300f434-15c6-4807-912f-9e3c0818eeb4';
@@ -149,7 +167,7 @@ export default function App() {
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
         {(mode === 0) &&         
           <Text style={styles.text}>
-            Welcome! Touch the button below, and scan an Info Point to start listening. 
+            Welcome! Touch the button below, and scan an Information Point to start listening. 
           </Text>
         }
         {(mode === 3) && 
